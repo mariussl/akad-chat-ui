@@ -1,0 +1,100 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9"><h2>Der Akad Super Chat</h2></div>
+      <div class="col-md-3">nicht eingelogged</div>
+    </div>
+    <div class="row">
+      <div class="col-md-12"><h4>Dies ist ein einfacher Chat basierend auf React, PHP und Postgresql</h4></div>
+    </div>
+    <form class="row">
+      <div class="col-md-3 form-group">
+        <label for="existing-username">Username</label>
+        <input type="text" pattern="[A-Za-z0-9]{15}" class="form-control"
+               name="existing-username" id="existing-username" aria-describedby="existing-username-help">
+        <small id="existing-username-help" class="form-text text-muted">Ihr bestehender Username</small>
+      </div>
+      <div class="col-md-3 form-group">
+        <label for="room">Chat-Raum</label>
+        <select class="form-control" name="room" id="room" aria-describedby="room-help">
+          <option selected>Wohnzimmer</option>
+          <option>Allgemein</option>
+        </select>
+        <small id="room-help" class="form-text text-muted">Der Raum in dem Sie chatten wollen.</small>
+      </div>
+      <div class="col-md-3 form-group padding-btn">
+        <button type="submit" class="btn btn-primary">Login</button>
+      </div>
+      <div class="col-md-3"></div>
+    </form>
+    <div class="row">
+      <div class="col-md-9">
+        <p>
+          <a class="btn btn-primary" data-toggle="collapse" href="#create-user"
+             role="button" aria-expanded="false" aria-controls="create-user">
+            Das erste Mal hier?
+          </a>
+        </p>
+      </div>
+      <div class="col-md-3"></div>
+    </div>
+    <div class="collapse" id="create-user">
+      <form class="row">
+        <div class="col-md-3 form-group">
+          <label for="new-username">Username</label>
+          <input type="text" pattern="[A-Za-z0-9]{15}" class="form-control"
+                 name="new-username" id="new-username" aria-describedby="new-username-help">
+          <small id="new-username-help" class="form-text text-muted">Der Username muss alphanumerisch sein.</small>
+        </div>
+        <div class="col-md-3 form-group">
+          <label for="color">Farbe</label>
+          <input type="color" class="form-control"
+                 name="color" id="color" aria-describedby="color-help">
+          <small id="color-help" class="form-text text-muted">Die Farbe in der Ihre Nachrichten erscheinen.</small>
+        </div>
+        <div class="col-md-3 form-group padding-btn">
+          <button type="submit" class="btn btn-primary">Registrieren</button>
+        </div>
+        <div class="col-md-3"></div>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/vendor/modernizr-3.8.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
